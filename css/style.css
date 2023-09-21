@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+button {
+  color: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+  border: transparent;
+}
+.container {
+  max-width: 1253px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #ffffff;
+  margin: 0;
+}
+
+.header {
+  background-image: url(../images/Group\ 2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header__body {
+  text-align: center;
+}
+.header__logo {
+  margin-left: 49px;
+}
+.header__boxes {
+  margin-bottom: 12px;
+}
+.header__desc {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 42px;
+  margin-bottom: 10px;
+  margin-left: 35px;
+}
+.header__text {
+  font-size: 20px;
+  margin-left: 32px;
+  padding-bottom: 47px;
+}
+
+.set {
+  background-image: url(../images/fonblack.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.set__body {
+  display: flex;
+  padding-bottom: 61px;
+}
+.set__left {
+  margin-right: 200px;
+  margin-top: 50px;
+}
+
+.set__right-listItem {
+  display: flex;
+}
+
+li img {
+  width: 64px;
+  height: 64px;
+  margin-right: 20px;
+}
+.set__right-head {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 30px;
+  color: #416df4;
+  margin-bottom: 35px;
+  width: 526px;
+  margin-top: 40px;
+}
+.set__right-serv {
+  display: flex;
+  color: #671d00;
+  margin-bottom: 9px;
+  margin-left: 370px;
+}
+
+.set__right-besserv {
+  border: 1px solid rgba(29, 0, 0.48);
+  font-size: 12px;
+  margin-right: 30px;
+}
+.set__right-podserv {
+  font-size: 12px;
+  border: 1px solid rgba(29, 0, 0.48);
+}
+.buy {
+  margin-top: 30px;
+  margin-left: 40px;
+  display: flex;
+}
+
+.buy__cen {
+  margin: 139px 0px 5px 36px;
+  font-size: 50px;
+}
+.buy__btn {
+  background-color: #fcff00;
+  color: black;
+  margin-left: 31px;
+  border-radius: 7px;
+  padding: 9px 41px;
+}
+
+.set__right-listItem {
+  align-items: center;
+  border: 1px solid rgba(29, 0, 0.48);
+  margin-bottom: 7px;
+}
+.set__right-listtext {
+  width: 180px;
+  margin: 0px;
+}
+
+.set__right-listmarg {
+  margin-left: 125px;
+}
+
+.set__right-itemmarg {
+  margin-left: 137px;
+  margin-right: 1px;
+}
+
+@media (max-width: 409px) {
+  .header__desc {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1230px) {
+  .set__right-listmarg {
+    margin-left: 45px;
+  }
+  .set__right-serv {
+    margin-left: 290px;
+  }
+
+  .set__left {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .set__right-itemmarg {
+    margin-left: 57px;
+  }
+  .set__right-serv {
+    margin-left: 238px;
+  }
+  .set__right-head {
+    width: 255px;
+  }
+  .set__body {
+    flex-direction: column;
+  }
+  .set__left {
+    order: 2;
+  }
+}
+
+@media (max-width: 525px) {
+  .buy {
+    flex-direction: column;
+  }
+  .set__right-list {
+    padding: 0;
+  }
+  .set__right-serv {
+    margin-left: 99px;
+  }
+  .set__right-itemmarg {
+    margin-left: 0px;
+  }
+  li img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+  .set__right-listItem {
+    font-size: 10px;
+  }
+  .set__right-listtext {
+    width: 86px;
+    margin-left: 10px;
+  }
+  .set__right-itemmarg {
+    margin-left: 69px;
+  }
+  .set__right-besserv {
+    margin: 0px;
+  }
+  .set__right-besserv {
+    margin-left: 25px;
+    margin-right: 17px;
+  }
+  .set__right-besserv,
+  .set__right-podserv {
+    font-size: 7px;
+  }
+  .buy__cen {
+    margin: 5px 0px 5px 36px;
+  }
+}
